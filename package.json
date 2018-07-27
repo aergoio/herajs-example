@@ -1,0 +1,19 @@
+{
+  "name": "herajs-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel src/index.js -d build",
+    "start": "babel src/index.js | node"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "herajs": "git+https://github.com/aergoio/herajs.git"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0"
+  }
+}
