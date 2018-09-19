@@ -1,4 +1,9 @@
 # herajs usage example
 
     npm install
-    npm run start
+
+    # For node.js
+    npm run start-node
+
+    # For browser
+    npm run start-web
