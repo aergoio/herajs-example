@@ -5,7 +5,7 @@
   "main": "node/src/index.js",
   "scripts": {
     "start": "npm run start-web",
-    "start-web": "webpack-dev-server --hot --inline --config web/webpack.config.js",
+    "start-web": "webpack-dev-server --open --hot --inline --config web/webpack.config.js",
     "start-node": "babel-node node/src/index.js"
   },
   "author": "",
