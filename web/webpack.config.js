@@ -30,11 +30,6 @@ module.exports = {
         },
       ]
     },
-    resolve: {
-      alias: {
-        'herajs$': 'herajs/dist/herajs.js'
-      },
-    },
     optimization: {
         splitChunks: {
           chunks: 'all',
