@@ -1,6 +1,6 @@
-import Aergo from 'herajs';
+import AergoClient from '@herajs/client';
 
-const aergo = new Aergo();
+const aergo = new AergoClient();
 
 async function update() {
     const blockchain = await aergo.blockchain();
