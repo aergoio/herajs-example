@@ -1,6 +1,5 @@
-import AergoClient from '@herajs/client';
-
-const aergo = new AergoClient();
+import { AergoClient, GrpcWebProvider } from '@herajs/client';
+const aergo = new AergoClient({}, new GrpcWebProvider({url: 'http://testnet.aergo.io:7845'}));
 
 async function update() {
     const blockchain = await aergo.blockchain();
