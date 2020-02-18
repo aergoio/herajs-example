@@ -4,7 +4,6 @@
   "description": "",
   "main": "node/src/index.js",
   "scripts": {
-    "start": "npm run start-web",
     "start-web": "webpack-dev-server --open --hot --inline --config web/webpack.config.js",
     "start-node": "babel-node node/src/index.js",
     "start-node-account": "babel-node node/src/account.js"
@@ -12,8 +11,8 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "@herajs/client": "0.4.5",
-    "@herajs/crypto": "0.0.3",
+    "@herajs/client": "0.17.0",
+    "@herajs/crypto": "0.17.0",
     "monaco-editor": "^0.14.3"
   },
   "devDependencies": {
