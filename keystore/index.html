@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <style>
+body {
+  background-color: #f5f5f5;
+  font-family: sans-serif;
+  padding: 20px;
+  margin: 0;
+  
+  display: flex;
+  min-height: 100vh;
+  justify-content: stretch;
+  align-items: center;
+}
+
+.wrap {
+  flex: 1;
+  max-width: 550px;
+  margin:0 auto;
+}
+
+.box {
+  background-color: #fff;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  padding: 20px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+h2 {
+  margin: 0 0 15px;
+  font-weight: normal;
+}
+  </style>
+  <script src="https://unpkg.com/@herajs/crypto@0.17.0/dist/herajs-crypto.umd.js"></script>
+  <script src="./main.js"></script>
+  <body>
+    <div class="wrap">
+      <div class="box">
+        <h2>
+        Create Account
+        </h2>
+        <p><button id="btn-newIdentity">
+        New Account
+        </button></p>
+        <div>
+        Address: <span id="address"></span>
+        </div>
+      </div>
+      
+      <div class="box">
+        <h2>
+        Export
+        </h2>
+        Password:
+        <input type="password" id="password" />
+        <button id="btn-export">
+        Export account as keystore
+        </button>
+      </div>
+      <div class="box">
+        <h2>
+        Import
+        </h2>
+        <p><input type="file" id="file" /><br>
+        Password:
+        <input type="password" id="password2" />
+        <button id="btn-import">
+        Import
+        </button>
+        <span id="import-status"></span></p>
+        Address: <span id="address2"></span>
+        </div>
+      </div>
+  </body>
+</html>
