@@ -13,7 +13,7 @@ update();
 // get state remotely
 
 const {AergoClient} = herajs; // import AergoClient from '@herajs/client';
-const fullnode_url = 'https://testnet-api-http.aergo.io:7845';
+const fullnode_url = 'https://testnet-api-http.aergo.io';
 const aergo = new AergoClient({}, new herajs.GrpcWebProvider({url: fullnode_url}));
 
 async function update() {
@@ -27,7 +27,7 @@ update();
 // queryContract
 
 const {AergoClient, Contract} = herajs; // import AergoClient, {Contract} from '@herajs/client';
-const fullnode_url = 'https://testnet-api-http.aergo.io:7845';
+const fullnode_url = 'https://testnet-api-http.aergo.io';
 const aergo = new AergoClient({}, new herajs.GrpcWebProvider({url: fullnode_url}));
 
 async function queryContract() {
@@ -45,7 +45,7 @@ queryContract();
 
 
 const {AergoClient} = herajs; // import AergoClient from '@herajs/client';
-const fullnode_url = 'https://testnet-api-http.aergo.io:7845';
+const fullnode_url = 'https://testnet-api-http.aergo.io';
 const aergo = new AergoClient({}, new herajs.GrpcWebProvider({url: fullnode_url}));
 
 async function sendTx() {
